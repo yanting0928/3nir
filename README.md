@@ -1,4 +1,9 @@
 # 3nir
+
+### reflection.mtz
+
+The orifinal R-free flags are unrecoverable, enable option: input.xray_data.r_free_flags.generate in Phenix GUI Comprehensive validation, refletion.mtz is the output.
+
 ## Problem detect:
 
 res 1 BTHR CA-C-O angle 109

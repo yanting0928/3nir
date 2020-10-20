@@ -7,4 +7,4 @@ The orifinal R-free flags are unrecoverable, enable option: input.xray_data.r_fr
 Input: step_01_put_in_box/3nir_box.pdb step_00_get_files/3nir.mtz
 
 ## Problem detect:
-see file Table_3NIR
+see file Table_3NIR.docx

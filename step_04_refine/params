@@ -1,0 +1,46 @@
+refinement {
+  main {
+    ordered_solvent = True
+    number_of_macro_cycles = 10
+    max_number_of_iterations = 50
+  }
+  hydrogens {
+    refine = individual *riding Auto
+  }
+  pdb_interpretation {
+    nonbonded_weight = 10
+  }
+  ordered_solvent {
+    low_resolution = 2.8
+    mode = second_half filter_only *every_macro_cycle \
+           every_macro_cycle_after_first
+    n_cycles = 2
+    primary_map_type = mFobs-DFmodel
+    primary_map_cutoff = 3.0
+    secondary_map_and_map_cc_filter {
+      cc_map_1_type = "Fmodel"
+      cc_map_2_type = 2mFo-DFmodel
+      poor_cc_threshold = 0.7
+      poor_map_value_threshold = 1.0
+    }
+    h_bond_min_mac = 1.8
+    h_bond_min_sol = 1.8
+    h_bond_max = 3.2
+    refine_adp = True
+    refine_occupancies = True
+    new_solvent = isotropic *anisotropic
+    b_iso_min = 1.0
+    b_iso_max = 30.0
+    anisotropy_min = 0.25
+    occupancy_min = 0.3
+    occupancy_max = 1.0
+  }
+  target_weights {
+    wc = 0.1
+    wu = 0.1
+  }
+  structure_factors_and_gradients_accuracy {
+    algorithm = *fft direct
+    grid_resolution_factor = 1/4.
+  }
+}

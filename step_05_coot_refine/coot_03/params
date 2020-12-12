@@ -1,0 +1,18 @@
+refinement {
+  main {
+    number_of_macro_cycles = 10
+    max_number_of_iterations = 50
+  }
+  hydrogens {
+    refine = individual *riding Auto
+  }
+  pdb_interpretation {
+    nonbonded_weight = 10
+  }
+  target_weights {
+    wc = 0.2
+    wu = 0.2
+  }
+}
+
+

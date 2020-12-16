@@ -1,6 +1,6 @@
 refinement {
   main {
-    number_of_macro_cycles = 10
+    number_of_macro_cycles = 7
     max_number_of_iterations = 50
   }
   hydrogens {
@@ -14,5 +14,3 @@ refinement {
     wu = 0.2
   }
 }
-
-

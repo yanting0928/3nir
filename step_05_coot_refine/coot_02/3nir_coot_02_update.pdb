@@ -768,23 +768,23 @@ ATOM    509  HB2AGLU A  23       0.190   4.472   9.864  0.50  3.13           H
 ATOM    510  HB3AGLU A  23       1.535   5.318   9.816  0.50  3.13           H
 ATOM    511  HG2AGLU A  23       0.214   7.286  10.056  0.50  3.90           H
 ATOM    512  HG3AGLU A  23      -1.044   6.348  10.305  0.50  3.90           H
-ATOM    513  H  BGLU A  23      -1.490   5.056   8.266  0.35  2.81           H
-ATOM    514  CA CGLU A  23       0.433   5.329   8.080  0.50  2.27           C
-ANISOU  514  CA CGLU A  23      294    416    151     25     40     38       C
-ATOM    515  CB CGLU A  23       0.495   5.060   9.588  0.50  2.60           C
-ANISOU  515  CB CGLU A  23      352    489    148     40     24      5       C
-ATOM    516  CG CGLU A  23      -0.092   6.185  10.445  0.50  3.25           C
-ANISOU  516  CG CGLU A  23      430    561    243     56     58    -58       C
-ATOM    517  CD CGLU A  23      -0.091   5.875  11.942  0.50  4.47           C
-ANISOU  517  CD CGLU A  23      613    812    272     94     48   -146       C
-ATOM    518  OE1CGLU A  23       0.182   4.732  12.337  0.50  5.18           O
-ANISOU  518  OE1CGLU A  23      781    927    260     76     16    -20       O
-ATOM    519  OE2CGLU A  23      -0.410   6.782  12.738  0.50  5.98           O
-ANISOU  519  OE2CGLU A  23      912    974    388    145    -13   -246       O
-ATOM    520  HB2CGLU A  23      -0.005   4.251   9.780  0.50  3.13           H
-ATOM    521  HB3CGLU A  23       1.424   4.945   9.846  0.50  3.13           H
-ATOM    522  HG2CGLU A  23       0.435   6.989  10.308  0.50  3.90           H
-ATOM    523  HG3CGLU A  23      -1.009   6.341  10.174  0.50  3.90           H
+ATOM    513  H   GLU A  23      -1.490   5.056   8.266  0.35  2.81           H
+ATOM    514  CA BGLU A  23       0.433   5.329   8.080  0.50  2.27           C
+ANISOU  514  CA BGLU A  23      294    416    151     25     40     38       C
+ATOM    515  CB BGLU A  23       0.495   5.060   9.588  0.50  2.60           C
+ANISOU  515  CB BGLU A  23      352    489    148     40     24      5       C
+ATOM    516  CG BGLU A  23      -0.092   6.185  10.445  0.50  3.25           C
+ANISOU  516  CG BGLU A  23      430    561    243     56     58    -58       C
+ATOM    517  CD BGLU A  23      -0.091   5.875  11.942  0.50  4.47           C
+ANISOU  517  CD BGLU A  23      613    812    272     94     48   -146       C
+ATOM    518  OE1BGLU A  23       0.182   4.732  12.337  0.50  5.18           O
+ANISOU  518  OE1BGLU A  23      781    927    260     76     16    -20       O
+ATOM    519  OE2BGLU A  23      -0.410   6.782  12.738  0.50  5.98           O
+ANISOU  519  OE2BGLU A  23      912    974    388    145    -13   -246       O
+ATOM    520  HB2BGLU A  23      -0.005   4.251   9.780  0.50  3.13           H
+ATOM    521  HB3BGLU A  23       1.424   4.945   9.846  0.50  3.13           H
+ATOM    522  HG2BGLU A  23       0.435   6.989  10.308  0.50  3.90           H
+ATOM    523  HG3BGLU A  23      -1.009   6.341  10.174  0.50  3.90           H
 ATOM    524  N   ALA A  24       0.976   3.249   7.168  1.00  2.11           N
 ANISOU  524  N   ALA A  24      264    402    135     20     30     35       N
 ATOM    525  CA  ALA A  24       1.915   2.281   6.610  1.00  2.13           C

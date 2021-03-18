@@ -1,0 +1,83 @@
+coot_01
+res 8 add a conformer ini occpancy 0.3
+res 10 add a conformer ini occpancy 0.5
+res 29 add a conformer ini occpancy 0.2(cause the altloc C occpancy nearly zero, then reini all the occpancy for all the conformers to 0.25)
+file: 3nir_coot_01.pdb
+
+res 8 altloc C N not connect with res 7
+
+run phenix.refine
+
+phenix.pdbtools 3nir_coot_01.pdb modify.occupancies.atom_selection="chain A and resseq 29" modify.occupancies.set=0.25 modify.selection="chain A and resseq 29"
+
+phenix.pdbtools 3nir_coot_01.pdb  modify.occupancies.set=1 modify.selection="element H or D"
+
+phenix.refine 3nir_coot_01_refine_001_modified.pdb ../../reflections.mtz wc=0.2 wu=0.2
+
+
+coot_02
+res 22 add a conformer for altB SER (coot will add as resname PRO) 	
+res 23 add a conformer to fit green blob, ini occpancy 0.5
+res 34 alt B refit to green density
+res 39 refit for both two conformers
+file: 3nir_coot_02.pdb
+
+res 22 re-set occpancy for all conformers 0.33
+res 29 re-set occpancy 0.25
+file: 3nir_coot_02_update.pdb
+
+
+rotate res22 conformer c to fit the green density
+rotate res25 conformer b CD1
+file: 3nir_coot_02_final.pdb
+
+coot_03
+
+position might have EOH
+add three ligands
+
+coot_04
+re-add conformer for res 8 (reset occ for each conformer to 0.33)
+remove ligand 2601 alt B 
+remove ligand 2701   replace as water 80
+remove ligand 2801   replace as water 81, 82
+
+modify  37 -- spit into 2
+        42 -- spit into 2
+	43 -- spit into 2
+	47 -- spit into 2
+	50 -- spit into 2
+	54 -- spit into 2
+	56 -- spit into 2
+	58 -- spit into 2
+	61 -- spit into 2
+	63 -- spit into 2
+	75 -- spit into 2
+
+
+
+coot_05
+49 -- spit into 2
+51 -- spit into 2
+
+water delete 68 73 74 78 79
+add water 83 84
+
+
+coot_06
+all the water be delete can be re-add
+modify 
+	40 -- spit into 2
+	53 -- spit into 2
+	54 -- keep only one
+	56 -- keep only one
+	60 -- spit into 2
+	77 -- delete
+
+add water 83 84 85
+
+
+step after coot_02 should be re-do.  
+Error in coot_02 fix (res 23 accident alt B mix with alt C)
+
+
